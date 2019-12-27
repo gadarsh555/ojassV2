@@ -8,6 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Events Page</title>
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/back.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
+   <script src="js/back.js"></script>
+
     <style>
         body {
     background: #000;
@@ -78,7 +83,7 @@
     </style>
 </head>
 <body>
-
+<?php include_once 'back.php';?> 
     <h1>Major Events</h1>
     <!-- Swiper -->
         <div class="swiper-container">
@@ -229,9 +234,13 @@
                   </div>
                 </div>
                 <!-- Add Pagination -->
+
                 <div class="swiper-pagination"></div>
+                <div style="margin-top:15vh;">
+                <?php include_once 'footer.php';?>
+                </div>
         </div>
-            
+       
     <script type="text/javascript" src="js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
@@ -253,6 +262,6 @@
           },
         });
     </script>
-    <?php include_once 'footer.php';?>
+    
 </body>
 </html>
